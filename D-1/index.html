@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조이컨트리클럽</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/script.js"></script>
+</head> 
+<body>
+    <main>
+        <header>
+            <div class="sideMenu">
+                <div class="logo"><a href="#"><img src="./img/logo.png" alt="로고"></a></div>
+            </div>
+            <div class="menuWrap">
+                <ul class="menu">
+                    <li><a href="#" class="mainMenu">CLUB</a>
+                        <ul class="subMenu">
+                            <li><a href="#">클럽소개</a></li>
+                            <li><a href="#">시설안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="mainMenu">BOOKING</a>
+                        <ul class="subMenu">
+                            <li><a href="#">요금안내</a></li>
+                            <li><a href="#">예약안내</a></li>
+                            <li><a href="#">위약안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="mainMenu">INFORMATION</a>
+                        <ul class="subMenu">
+                            <li><a href="#">명예의 전당</a>
+                            </li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">포토갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="mainMenu">COMMUITY</a>
+                        <ul class="subMenu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="spotMenu">
+                    <ul>
+                        <a href="#">로그인</a>
+                        <div>|</div>
+                        <a href="#">회원가입</a>
+                    </ul>
+                </div>
+                <div class="logo"><a href="#"><img src="./img/logo.png" alt="로고"></a></div>
+            </div>
+        </header>
+        <div class="bodyWrap">
+            <div class="imgSlide">
+                <a href="#"><img src="./img/img1.jpg" alt="이미지 슬라이드1"></a>
+                <a href="#"><img src="./img/img2.jpg" alt="이미지 슬라이드2"></a>
+                <a href="#"><img src="./img/img3.jpg" alt="이미지 슬라이드3"></a>
+            </div>
+            <div class="direct">
+                <ul>
+                    <li><a href="#"><img src="./img/icon1.jpg" alt="바로가기1"></a></li>
+                    <li><a href="#"><img src="./img/icon2.jpg" alt="바로가기2"></a></li>
+                    <li><a href="#"><img src="./img/icon3.jpg" alt="바로가기3"></a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="banner">
+                    <a href="#"><img src="./img/banner.jpg" alt="배너"></a>
+                </div>
+                <div class="tabMenuWrap">
+                    <!-- Tab 1 : 공지사항 -->
+                    <input type="radio" name="tabset" id="tab1" aria-controls="notice" checked>
+                    <label for="tab1">공지사항</label>
+                    <!-- Tab 2 : 갤러리 -->
+                    <input type="radio" name="tabset" id="tab2" aria-controls="gallery">
+                    <label for="tab2">갤러리</label>
+          
+                    <div class="tabPannels">
+                      <section id="notice" class="tab-panel notice">
+                        <ul>
+                          <li><a href="#">West 6번홀 홀인원 및 포토존 이벤트 안내
+                          <span>2024.01.23</span></a></li>
+                          <li><a href="#">동계 시즌 이벤트 안내
+                          <span>2024.01.23</span></a></li>
+                          <li><a href="#">위약예치금 제도 종료 및 반환 신청 안내
+                          <span>2024.01.23</span></a></li>
+                          <li><a href="#">캐디피 인상 요금 안내
+                          <span>2024.01.23</span></a></li>
+                        </ul>
+                      </section>
+                      <section id="gallery" class="tab-panel gallery">
+                        <a href="#"><img src="./img/icon1.jpg" alt="갤러리1"></a>
+                        <a href="#"><img src="./img/icon2.jpg" alt="갤러리2"></a>
+                        <a href="#"><img src="./img/icon3.jpg" alt="갤러리3"></a>
+                      </section>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="copywriter">
+                    <span>COPYRIGHT © by WEBDESIGN. ALL RIGHTS RESERVED</span>
+                </div>
+                <div class="sns">
+                    <a href="#"><img src="./img/sns1.jpg" alt="sns이미지1"></a>
+                    <a href="#"><img src="./img/sns2.jpg" alt="sns이미지2"></a>
+                    <a href="#"><img src="./img/sns3.jpg" alt="sns이미지3"></a>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <div id="modalWrap">
+        <div class="modal">
+            <h3>
+                모달 팝업 제목
+            </h3>
+            <p>
+                동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세.
+                무궁화 삼천리 화려강 대한 사람 대한으로 길이 보전하세.
+                남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세.
+            </p>
+            <button class="btn">닫기</button>
+        </div>
+    </div>
+</body>
+</html>

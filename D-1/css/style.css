@@ -1,0 +1,260 @@
+* {
+    margin: 0;padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+}
+
+main {
+    display: flex;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+.sideMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 200px;
+
+}
+
+.logo {
+    padding: 10px auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #1d5f24;
+}
+header{
+    height: 950px;
+    /* gap: 20px; */
+}
+.menuWrap {
+    width: 200px;
+    /* height: 950px; */
+}
+.menu {
+    margin-bottom: 532px;
+    /* margin-top: 10px; */
+    
+}
+
+.mainMenu {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(24, 121, 24);
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.mainMenu:hover {
+    background-color: rgb(78, 143, 78);
+
+}
+.subMenu {
+    /* margin-bottom: 10px; */
+    margin: 10px auto;
+}
+
+.subMenu li:first-child {
+    margin-top: 5px;
+}
+.subMenu a {
+    /* width: 80%; */
+    text-align: center;
+    align-items: center;
+    /* border-bottom: 1px solid rgb(15, 99, 15); */
+}
+.subMenu li {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.spotMenu ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.bodyWrap {
+    position: relative;
+    width: calc(100% - 200px);
+    overflow: hidden;
+}
+
+.imgSlide {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    background-color: #222222;
+}
+
+.imgSlide a {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.imgSlide a img {
+    height: 400px;
+    width: 100%;
+}
+
+.direct {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.content {
+    width: 100%;
+    padding: 0;margin: 0;
+}
+.banner a {
+    height: 200px;
+}
+.banner a img {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(103, 209, 117);
+    overflow: hidden;
+}
+
+/* 각각 컨텐츠 박스의 영역  */
+.tabMenuWrap{ 
+    height:250px;
+    padding:10px;
+    box-sizing: border-box;
+    align-items: start;
+    text-align: left;
+  }
+  
+  /* 라디오버튼 안보이게 */
+  .tabMenuWrap > input[type="radio"] {
+    display:none;
+  }
+  
+  .tabMenuWrap .tab-panel {
+    display: none;
+  }
+  
+  .tabMenuWrap > input:nth-of-type(1):checked ~ .tabPannels > .tab-panel:nth-of-type(1),
+  .tabMenuWrap > input:nth-of-type(2):checked ~ .tabPannels > .tab-panel:nth-of-type(2),
+  .tabMenuWrap > input:nth-of-type(3):checked ~ .tabPannels > .tab-panel:nth-of-type(3)
+  {
+    display: flex;
+  }
+
+.tabMenuWrap label {
+padding: 10px 20px;
+display: inline-block;
+background-color: rgb(15, 99, 15);
+cursor: pointer;
+text-align: start;
+color:#ffffff;
+font-weight: bold;
+}
+
+.tabMenuWrap label:hover {
+    background-color: rgb(78, 143, 78);
+}
+
+section {
+    height: 188px;
+    border: 1px solid black;
+}  
+
+#notice ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+#gallery {
+    margin:auto;
+}
+
+#notice span {
+    justify-content: end;
+}
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: rgb(78, 143, 78);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copywriter {
+    color: #ffffff;
+    padding: 40px;
+}
+
+.sns {
+    display: flex;
+    padding: 40px;
+}
+
+.sns a {
+    margin: 4px;
+}
+
+#modalWrap {
+    display: none;
+    width: 40%;
+    height: 20%;
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid #333333;
+}
+
+#modalWrap.active {
+    display: block;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.modal h3 {
+    border-bottom: 1px solid #333333;
+    /* margin-bottom: 30px; */
+}
+
+.btn {
+    cursor: pointer;
+}
+
