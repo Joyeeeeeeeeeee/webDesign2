@@ -145,7 +145,7 @@ header{
 /* 각각 컨텐츠 박스의 영역  */
 .tabMenuWrap{ 
     height:250px;
-    padding:10px;
+    /* padding:10px; */
     box-sizing: border-box;
     align-items: start;
     text-align: left;
@@ -195,6 +195,14 @@ section {
 
 #gallery {
     margin:auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#gallery img {
+    width: 150px;
+    height: 150px;
 }
 
 #notice span {
